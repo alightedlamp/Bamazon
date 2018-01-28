@@ -1,0 +1,25 @@
+{
+  "name": "11-Bamazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alightedlamp/Bamazon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alightedlamp/Bamazon/issues"
+  },
+  "homepage": "https://github.com/alightedlamp/Bamazon#readme",
+  "dependencies": {
+    "command-line-args": "^5.0.1",
+    "inquirer": "^5.0.1",
+    "mysql": "^2.15.0"
+  }
+}
