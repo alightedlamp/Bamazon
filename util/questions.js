@@ -53,16 +53,8 @@ module.exports = {
         name: 'name'
       },
       {
-        message: 'Department:',
+        message: 'Department ID:',
         name: 'department'
-        // choices: departments.viewDepartments().then(res =>
-        //   res.map(item => {
-        //     return {
-        //       name: item.name,
-        //       value: item.id
-        //     };
-        //   })
-        // )
       },
       {
         message: 'Price:',
@@ -74,21 +66,33 @@ module.exports = {
       }
     ]
   },
-  supervisor: [
-    {
-      message: 'Choose an option:',
-      type: 'rawlist',
-      choices: [
-        {
-          name: 'View Product Sales by Department',
-          value: 'viewSalesByDepartment'
-        },
-        {
-          name: 'Add New Department',
-          value: 'addNewDepartment'
-        }
-      ],
-      name: 'choice'
-    }
-  ]
+  supervisor: {
+    init: [
+      {
+        message: 'Choose an option:',
+        type: 'rawlist',
+        choices: [
+          {
+            name: 'View Product Sales by Department',
+            value: 'view_sales'
+          },
+          {
+            name: 'Add New Department',
+            value: 'add_department'
+          }
+        ],
+        name: 'choice'
+      }
+    ],
+    addDepartment: [
+      {
+        message: 'Enter department name:',
+        name: 'name'
+      },
+      {
+        message: 'Overhead costs:',
+        name: 'overheadCosts'
+      }
+    ]
+  }
 };
