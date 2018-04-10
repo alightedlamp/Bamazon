@@ -2,7 +2,7 @@
 
 This is a command-line application built with Node that presents the user, depending on their access level, with various commands they can input to make purchases or manage available products and inventory. It outputs the data in a convenient table.
 
-## Built With:
+## Built With
 
 - Inquirer
 - MySQL
